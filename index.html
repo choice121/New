@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rental Application Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+ <form action="https://formsubmit.co/choiceproperties404@gmail.com" method="POST" enctype="multipart/form-data">
+    <h2>Rental Application Form</h2>
+
+    <label>Property Address Applied For</label>
+    <input type="text" name="propertyAddress" required />
+
+    <div class="section">
+      <h3>Applicant Information</h3>
+      <label>Full Name</label>
+      <input type="text" name="fullName" required />
+
+      <label>Date of Birth</label>
+      <input type="date" name="dob" required />
+
+      <label>Social Security Number (SSN)</label>
+      <input type="text" name="ssn" required />
+
+      <label>Phone Number</label>
+      <input type="tel" name="phone" required />
+
+      <label>Email Address</label>
+      <input type="email" name="email" required />
+
+      <label>Driver’s License / ID Number</label>
+      <input type="text" name="idNumber" required />
+    </div>
+
+    <div class="section">
+      <h3>Current Address</h3>
+      <label>Street Address</label>
+      <input type="text" name="currentAddress" required />
+
+      <label>How long have you lived here?</label>
+      <input type="text" name="currentDuration" required />
+
+      <label>Reason for Leaving</label>
+      <input type="text" name="reasonLeaving" />
+    </div>
+
+    <div class="section">
+      <h3>Previous Address (if less than 2 years)</h3>
+      <label>Street Address</label>
+      <input type="text" name="previousAddress" />
+
+      <label>Landlord Name & Phone</label>
+      <input type="text" name="previousLandlord" />
+
+      <label>Reason for Leaving</label>
+      <input type="text" name="previousReasonLeaving" />
+    </div>
+
+    <div class="section">
+      <h3>Employment Information</h3>
+      <label>Current Employer</label>
+      <input type="text" name="employer" required />
+
+      <label>Position/Title</label>
+      <input type="text" name="position" required />
+
+      <label>Monthly Income</label>
+      <input type="number" name="income" required />
+
+      <label>Employer Phone</label>
+      <input type="tel" name="employerPhone" required />
+    </div>
+
+    <div class="section">
+      <h3>Additional Income</h3>
+      <label>Source</label>
+      <input type="text" name="incomeSource" />
+
+      <label>Amount</label>
+      <input type="number" name="incomeAmount" />
+    </div>
+
+    <div class="section">
+      <h3>Vehicle Information</h3>
+      <label>Make & Model</label>
+      <input type="text" name="vehicleMakeModel" />
+
+      <label>License Plate</label>
+      <input type="text" name="licensePlate" />
+    </div>
+
+    <div class="section">
+      <h3>Pet Information</h3>
+      <label>Do you have pets?</label>
+      <select name="hasPets">
+        <option value="">Select</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+
+      <label>If yes, describe type and number</label>
+      <textarea name="petDetails" rows="2"></textarea>
+    </div>
+
+    <div class="section">
+      <h3>Emergency Contact</h3>
+      <label>Name</label>
+      <input type="text" name="emergencyName" required />
+
+      <label>Relationship</label>
+      <input type="text" name="emergencyRelation" required />
+
+      <label>Phone</label>
+      <input type="tel" name="emergencyPhone" required />
+    </div>
+
+    <div class="section">
+      <h3>References</h3>
+      <label>Reference 1 - Name & Phone</label>
+      <input type="text" name="ref1" required />
+
+      <label>Reference 2 - Name & Phone</label>
+      <input type="text" name="ref2" />
+    </div>
+
+    <div class="section">
+      <h3>Co-Applicant Information (if any)</h3>
+      <label>Full Name</label>
+      <input type="text" name="coName" />
+
+      <label>Date of Birth</label>
+      <input type="date" name="coDob" />
+
+      <label>Phone & Email</label>
+      <input type="text" name="coContact" />
+    </div>
+
+    <div class="consent">
+      <label>
+        <input type="checkbox" required />
+        I authorize the landlord to obtain my credit report, background check, employment and rental history for tenant screening purposes.
+      </label>
+
+      <label>Digital Signature</label>
+      <input type="text" name="signature" placeholder="Type your full name" required />
+
+      <label>Date</label>
+      <input type="date" name="signatureDate" required />
+    </div>
+
+    <button type="submit">Submit Application</button>
+  </form>
+
+</body>
+</html>
